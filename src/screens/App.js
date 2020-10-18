@@ -6,7 +6,6 @@ import { currentFirebaseUser } from '../services/FirebaseApi';
 export default class App extends Component {
 
   async componentDidMount() {
-    //let
     let resetNavigation = CommonActions.reset({index: 0, routes: [{name: 'Login'}],});
     try {
       const user = await currentFirebaseUser();
